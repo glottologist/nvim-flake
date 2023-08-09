@@ -92,9 +92,9 @@ in {
         if config.vim.treesitter.enable
         then ''
           ["<leader>fs"] = { name = "treesitter" },
-          ''
+        ''
         else ""
-        }
+      }
 
 
 
@@ -234,7 +234,17 @@ in {
         if config.vim.languages.markdown.glow.enable
         then ''
           -- Markdown
-          ["<leader>pm"] = { name = "+Preview Markdown" },
+          ["<leader>p"] = { name = "+Preview" },
+          ["<leader>pm"] = { name = "markdown" },
+        ''
+        else ""
+      }
+        ${
+        if config.vim.utility.motion.hop
+        then ''
+          -- Motion
+          ["<leader>m"] = { name = "+Motion" },
+          ["<leader>mh"] = { name = "hop pattern" },
         ''
         else ""
       }
