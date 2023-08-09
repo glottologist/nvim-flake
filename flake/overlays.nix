@@ -1,0 +1,21 @@
+{
+  inputs,
+  pkgs,
+  ...
+}: let
+  inherit (import ../extra.nix inputs) neovimConfiguration mainConfig;
+
+  buildPkg = pkgs: modules:
+    (neovimConfiguration {inherit pkgs modules;})
+    .neovim;
+
+  editorConfig = mainConfig false;
+  developerConfig = mainConfig true;
+in {
+  flake.overlays.default = _final: prev: {
+    inherit neovimConfiguration;
+    neovim-editor = buildPkg prev [editorConfig];
+    neovim-developer = buildPkg prev [developerConfig];
+    devPkg = buildPkg pkgs [editorConfig {config.vim.languages.html.enable = pkgs.lib.mkForce true;}];
+  };
+}
