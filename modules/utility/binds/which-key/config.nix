@@ -239,8 +239,9 @@ in {
         ''
         else ""
       }
+
         ${
-        if config.vim.utility.motion.hop
+        if config.vim.utility.motion.hop.enable
         then ''
           -- Motion
           ["<leader>m"] = { name = "+Motion" },
