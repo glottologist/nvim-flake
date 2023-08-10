@@ -902,15 +902,15 @@
     "nvim-cmp": {
       "flake": false,
       "locked": {
-        "lastModified": 1681258533,
-        "narHash": "sha256-vMQZzbvLGkBNtds8Ak6LgJBPCqXCxnJQ3m/eaTF2k+4=",
-        "owner": "ShIRannx",
+        "lastModified": 1688965049,
+        "narHash": "sha256-Hq6YUfMQo1rHoay3/NieGCne7U/f06GwUPhN2HO0PdQ=",
+        "owner": "hrsh7th",
         "repo": "nvim-cmp",
-        "rev": "3dbd99fd3eab9974cda7751e43383f7869f70aa1",
+        "rev": "c4e491a87eeacf0408902c32f031d802c7eafce8",
         "type": "github"
       },
       "original": {
-        "owner": "ShIRannx",
+        "owner": "hrsh7th",
         "repo": "nvim-cmp",
         "type": "github"
       }
