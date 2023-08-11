@@ -282,12 +282,34 @@ in {
         ${
         if config.vim.utility.motion.hop.enable
         then ''
-              -- Motion
-              ["<leader>m"] = { name = "+Motion" },
-              ["<leader>mp"] = { "<cmd> HopPattern<CR>", "Hop Pattern" },
+          -- Motion
+          ["<leader>m"] = { name = "+Motion" },
+          ["<leader>mp"] = { "<cmd> HopPattern<CR>", "Hop Pattern" },
         ''
         else ""
       }
+
+        ${
+        if config.vim.eyeliner.enable
+        then ''
+          -- Eyeliner
+          ["<leader>e"] = { name = "+Eyeliner" },
+          ["<leader>et"] = { "<cmd> EyelinerToggle<CR>", "Toggle Eyeliner" },
+        ''
+        else ""
+      }
+
+        ${
+        if config.vim.easyalign.enable
+        then ''
+          -- Easy Align
+          ["<leader>a"] = { name = "+Align" },
+          ["<leader>aa"] = { "", "Align" },
+          ["<leader>al"] = { "", "Align (Live)" },
+        ''
+        else ""
+      }
+
 
       })
     '';

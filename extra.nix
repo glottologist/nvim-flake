@@ -27,6 +27,7 @@ inputs: let
 
       vim.zenmode.enable = true;
       vim.eyeliner.enable = true;
+      vim.easyalign.enable = true;
 
       vim.lsp = {
         formatOnSave = true;
@@ -135,7 +136,6 @@ inputs: let
         gitsigns.enable = true;
         gitsigns.codeActions = false; # throws an annoying debug message
       };
-
 
       vim.notify = {
         nvim-notify.enable = true;

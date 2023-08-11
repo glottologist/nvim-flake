@@ -357,7 +357,6 @@
       flake = false;
     };
 
-
     # Notifications
     nvim-notify = {
       url = "github:rcarriga/nvim-notify";
@@ -382,6 +381,10 @@
 
     which-key = {
       url = "github:folke/which-key.nvim";
+      flake = false;
+    };
+    easyalign = {
+      url = "github:junegunn/vim-easy-align";
       flake = false;
     };
 

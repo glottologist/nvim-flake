@@ -304,6 +304,22 @@
         "type": "github"
       }
     },
+    "easyalign": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1556512351,
+        "narHash": "sha256-BpjYYAfpUCLitNfRsRnfzxsOIHA6T/WmL05BjRRt7j4=",
+        "owner": "junegunn",
+        "repo": "vim-easy-align",
+        "rev": "12dd6316974f71ce333e360c0260b4e1f81169c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "junegunn",
+        "repo": "vim-easy-align",
+        "type": "github"
+      }
+    },
     "elixir-ls": {
       "flake": false,
       "locked": {
@@ -1196,6 +1212,7 @@
         "diffview-nvim": "diffview-nvim",
         "dracula": "dracula",
         "dressing-nvim": "dressing-nvim",
+        "easyalign": "easyalign",
         "elixir-ls": "elixir-ls",
         "elixir-tools": "elixir-tools",
         "eyeliner": "eyeliner",

@@ -22,6 +22,7 @@ with lib; let
     "diffview-nvim"
     "dracula"
     "dressing-nvim"
+    "easyalign"
     "elixir-ls"
     "elixir-tools"
     "eyeliner"

@@ -1,13 +1,14 @@
 _: {
   imports = [
     ./binds
+    ./colorizer
+    ./diffview
+    ./easyalign
+    ./eyeliner
+    ./icon-picker
     ./motion
     ./telescope
-    ./colorizer
-    ./icon-picker
     ./telescope
-    ./diffview
     ./zenmode
-    ./eyeliner
   ];
 }
