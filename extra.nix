@@ -25,6 +25,9 @@ inputs: let
         };
       };
 
+      vim.zenmode.enable = true;
+      vim.eyeliner.enable = true;
+
       vim.lsp = {
         formatOnSave = true;
         lspkind.enable = false;
@@ -41,10 +44,11 @@ inputs: let
         enableTreesitter = true;
         enableExtraDiagnostics = true;
 
+        ansible.enable = isDeveloper;
         nix.enable = true;
         html.enable = isDeveloper;
         sql.enable = isDeveloper;
-        # ligo.enable = isDeveloper;
+        ligo.enable = isDeveloper;
         clojure.enable = isDeveloper;
         elm.enable = isDeveloper;
         # fsharp.enable = isDeveloper;
@@ -68,7 +72,6 @@ inputs: let
         nvimWebDevicons.enable = true;
         scrollBar.enable = true;
         smoothScroll.enable = true;
-        cellularAutomaton.enable = true;
         fidget-nvim.enable = true;
         indentBlankline = {
           enable = true;
@@ -133,10 +136,6 @@ inputs: let
         gitsigns.codeActions = false; # throws an annoying debug message
       };
 
-      vim.minimap = {
-        minimap-vim.enable = false;
-        codewindow.enable = true; # lighter, faster, and uses lua for configuration
-      };
 
       vim.notify = {
         nvim-notify.enable = true;
@@ -170,7 +169,6 @@ inputs: let
       vim.ui = {
         noice.enable = true;
       };
-
 
       vim.comments = {
         comment-nvim.enable = true;

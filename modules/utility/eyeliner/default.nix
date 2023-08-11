@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ./minimap-vim.nix
+    ./eyeliner.nix
     ./config.nix
   ];
 }

@@ -7,5 +7,7 @@ _: {
     ./icon-picker
     ./telescope
     ./diffview
+    ./zenmode
+    ./eyeliner
   ];
 }

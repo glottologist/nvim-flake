@@ -17,7 +17,6 @@
     ./autopairs
     ./snippets
     ./git
-    ./minimap
     ./utility
     ./notes
     ./terminal

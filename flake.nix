@@ -56,11 +56,27 @@
     # TODO: get zig from the zig overlay instead of nixpkgs
     zig.url = "github:mitchellh/zig-overlay";
 
+    # ZenMode
+    zenmode = {
+      url = "github:folke/zen-mode.nvim";
+      flake = false;
+    };
+    # Eyeliner
+    eyeliner = {
+      url = "github:jinh0/eyeliner.nvim";
+      flake = false;
+    };
+
     # LSP plugins
     nvim-lspconfig = {
       # url = "github:neovim/nvim-lspconfig?ref=v0.1.3";
       # Use master for nil_ls
       url = "github:neovim/nvim-lspconfig";
+      flake = false;
+    };
+
+    lsp-format = {
+      url = "github:lukas-reineke/lsp-format.nvim";
       flake = false;
     };
 
@@ -317,11 +333,6 @@
       flake = false;
     };
 
-    cellular-automaton = {
-      url = "github:Eandrju/cellular-automaton.nvim";
-      flake = false;
-    };
-
     indent-blankline = {
       url = "github:lukas-reineke/indent-blankline.nvim";
       flake = false;
@@ -346,16 +357,6 @@
       flake = false;
     };
 
-    # Minimap
-    minimap-vim = {
-      url = "github:wfxr/minimap.vim";
-      flake = false;
-    };
-
-    codewindow-nvim = {
-      url = "github:gorbit99/codewindow.nvim";
-      flake = false;
-    };
 
     # Notifications
     nvim-notify = {
@@ -437,7 +438,6 @@
       url = "github:zbirenbaum/copilot.lua";
       flake = false;
     };
-
 
     # Dependencies
     plenary-nvim = {

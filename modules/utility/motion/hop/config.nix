@@ -10,7 +10,7 @@ in {
     vim.startPlugins = ["hop-nvim"];
 
     vim.nnoremap = {
-      "<leader>mh" = "<cmd> HopPattern<CR>";
+      "<leader>mp" = "<cmd> HopPattern<CR>";
     };
 
     vim.luaConfigRC.hop-nvim = nvim.dag.entryAnywhere ''

@@ -8,6 +8,7 @@ with lib; let
     };
 in {
   imports = [
+    ./ansible.nix
     ./clojure.nix
     ./dart
     ./elixir
@@ -16,7 +17,7 @@ in {
     ./go.nix
     ./haskell.nix
     ./html.nix
-    # ./ligo.nix
+    ./ligo.nix
     ./markdown
     ./nim.nix
     ./nix.nix

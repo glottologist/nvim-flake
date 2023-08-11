@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ./codewindow.nix
+    ./zenmode.nix
     ./config.nix
   ];
 }

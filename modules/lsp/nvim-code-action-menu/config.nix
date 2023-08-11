@@ -11,7 +11,7 @@ in {
     vim.startPlugins = ["nvim-code-action-menu"];
 
     vim.nnoremap = {
-      "<silent><leader>lca" = ":CodeActionMenu<CR>";
+      "<silent><leader>la" = ":CodeActionMenu<CR>";
     };
   };
 }

@@ -23,7 +23,7 @@ in {
       };
 
       vim.configRC.glow = nvim.dag.entryAnywhere ''
-        autocmd FileType markdown noremap <leader>p :Glow<CR>
+        autocmd FileType markdown noremap <leader>pm :Glow<CR>
       '';
     })
   ]);
