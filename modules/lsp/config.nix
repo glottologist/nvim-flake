@@ -55,8 +55,6 @@ in {
       default_on_attach = function(client, bufnr)
         attach_keymaps(client, bufnr)
         format_callback(client, bufnr)
-        require("lsp-format").setup {}
-        require("lsp-format").on_attach(client)
       end
 
       local capabilities = vim.lsp.protocol.make_client_capabilities()
