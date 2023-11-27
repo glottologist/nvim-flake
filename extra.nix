@@ -53,6 +53,10 @@ inputs: let
         clojure.enable = isDeveloper;
         elm.enable = isDeveloper;
         # fsharp.enable = isDeveloper;
+        markdown = {
+        enable = true;
+        glow.enable=true;
+        };
         haskell.enable = isDeveloper;
         ocaml.enable = isDeveloper;
         nim.enable = isDeveloper;

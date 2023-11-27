@@ -16,7 +16,7 @@ with builtins; let
         lspconfig.ocamllsp.setup{
           capabilities = capabilities;
           on_attach = default_on_attach;
-          cmd = {"${cfg.lsp.package}/bin/ocaml-lsp", "--stdio"}
+          cmd = {"${cfg.lsp.package}/bin/ocaml-lsp"}
         }
       '';
     };
