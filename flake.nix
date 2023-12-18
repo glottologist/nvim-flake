@@ -105,7 +105,7 @@
       flake = false;
     };
 
-    git-worktree = {
+    git-worktrees = {
       url = "github:ThePrimeagen/git-worktree.nvim";
       flake = false;
     };

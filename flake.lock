@@ -499,7 +499,7 @@
         "type": "github"
       }
     },
-    "git-worktree": {
+    "git-worktrees": {
       "flake": false,
       "locked": {
         "lastModified": 1699392961,
@@ -1238,7 +1238,7 @@
         "flutter-tools": "flutter-tools",
         "fsharp-language-server": "fsharp-language-server",
         "gesture-nvim": "gesture-nvim",
-        "git-worktree": "git-worktree",
+        "git-worktrees": "git-worktrees",
         "gitsigns-nvim": "gitsigns-nvim",
         "glow-nvim": "glow-nvim",
         "hop-nvim": "hop-nvim",
