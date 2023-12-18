@@ -30,6 +30,7 @@ with lib; let
     "flutter-tools"
     "fsharp-language-server"
     "gitsigns-nvim"
+    "git-worktrees"
     "glow-nvim"
     "hop-nvim"
     "icon-picker-nvim"

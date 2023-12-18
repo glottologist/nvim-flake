@@ -9,6 +9,15 @@ with builtins; let
   cfg = config.vim.git;
 in {
   config = mkIf cfg.enable (mkMerge [
+    (mkIf cfg.gitworktrees.enable (mkMerge [
+      {
+        vim.startPlugins = ["git-worktrees"];
+
+        vim.luaConfigRC.gitsigns = nvim.dag.entryAnywhere ''
+          require('git-worktree').setup {}
+        '';
+      }
+    ]))
     (mkIf cfg.gitsigns.enable (mkMerge [
       {
         vim.startPlugins = ["gitsigns-nvim"];

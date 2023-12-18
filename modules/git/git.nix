@@ -11,6 +11,10 @@ in {
   options.vim.git = {
     enable = mkEnableOption "Git support";
 
+    gitworktrees = {
+      enable = mkEnableOption "gitworktrees";
+    };
+    
     gitsigns = {
       enable = mkEnableOption "gitsigns";
 

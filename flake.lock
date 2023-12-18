@@ -499,6 +499,22 @@
         "type": "github"
       }
     },
+    "git-worktree": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1699392961,
+        "narHash": "sha256-+RBoa1NS/W6XMhaIg3/Qw38VnL2imTQZ6bR88bZzV1c=",
+        "owner": "ThePrimeagen",
+        "repo": "git-worktree.nvim",
+        "rev": "f247308e68dab9f1133759b05d944569ad054546",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThePrimeagen",
+        "repo": "git-worktree.nvim",
+        "type": "github"
+      }
+    },
     "gitsigns-nvim": {
       "flake": false,
       "locked": {
@@ -1222,6 +1238,7 @@
         "flutter-tools": "flutter-tools",
         "fsharp-language-server": "fsharp-language-server",
         "gesture-nvim": "gesture-nvim",
+        "git-worktree": "git-worktree",
         "gitsigns-nvim": "gitsigns-nvim",
         "glow-nvim": "glow-nvim",
         "hop-nvim": "hop-nvim",

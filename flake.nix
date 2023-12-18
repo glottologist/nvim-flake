@@ -105,6 +105,11 @@
       flake = false;
     };
 
+    git-worktree = {
+      url = "github:ThePrimeagen/git-worktree.nvim";
+      flake = false;
+    };
+
     nvim-code-action-menu = {
       url = "github:weilbith/nvim-code-action-menu";
       flake = false;
