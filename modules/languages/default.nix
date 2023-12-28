@@ -13,7 +13,7 @@ in {
     ./dart
     ./elixir
     ./elm.nix
-    #./fsharp.nix
+    ./fsharp.nix
     ./go.nix
     ./haskell.nix
     ./html.nix

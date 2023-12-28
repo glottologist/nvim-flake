@@ -8,8 +8,22 @@ with lib;
 with builtins; let
   cfg = config.vim.languages.fsharp;
 
-  defaultServer = "fsharp_language_server";
+  defaultServer = "ionide";
   servers = {
+
+ionide = {
+ 
+      package = pkgs.vimPlugins.Ionide-vim;
+      lspConfig = ''
+        lspconfig.ionide.setup {
+          capabilities = capabilities;
+          on_attach=default_on_attach;
+          cmd = {"${cfg.lsp.package}/bin/ionide"};
+          ${optionalString (cfg.lsp.opts != null) "init_options = ${cfg.lsp.opts}"}
+        }
+      '';
+
+};
     fsharp_language_server = {
       package = pkgs.fsharp-language-server;
       lspConfig = ''
@@ -53,7 +67,7 @@ in {
   config = mkIf cfg.enable (mkMerge [
     (mkIf cfg.lsp.enable {
       vim.lsp.lspconfig.enable = true;
-      vim.lsp.lspconfig.sources.fsharp_language_server = servers.${cfg.lsp.server}.lspConfig;
+      vim.lsp.lspconfig.sources.ionide = servers.${cfg.lsp.server}.lspConfig;
     })
   ]);
 }

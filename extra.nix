@@ -52,7 +52,7 @@ inputs: let
         ligo.enable = isDeveloper;
         clojure.enable = isDeveloper;
         elm.enable = isDeveloper;
-        # fsharp.enable = isDeveloper;
+        fsharp.enable = isDeveloper;
         markdown = {
         enable = true;
         glow.enable=true;
