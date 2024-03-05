@@ -69,7 +69,7 @@ inputs: let
         zig.enable = isDeveloper;
         python.enable = isDeveloper;
         dart.enable = isDeveloper;
-        elixir.enable = isDeveloper;
+        elixir.enable = false;
       };
 
       vim.visuals = {

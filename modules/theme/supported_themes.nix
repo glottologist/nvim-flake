@@ -7,6 +7,8 @@
       vim.cmd[[let g:zenbones_compat = 1]]
       vim.cmd[[set background=${style}]]
       vim.cmd[[colorscheme zenbones]]
+      vim.cmd[[set cursorcolumn]]
+      vim.cmd[[highlight CursorColumn guibg=lightblue ctermbg=lightgray ]]
     '';
     styles = ["dark" "light"];
   };
