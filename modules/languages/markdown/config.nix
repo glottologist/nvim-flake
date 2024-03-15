@@ -24,7 +24,6 @@ in {
 
       vim.configRC.glow = nvim.dag.entryAnywhere ''
         autocmd FileType markdown noremap <leader>pm :Glow<CR>
-        autocmd BufRead,BufNewFile *.markdown,*.md set conceallevel=2 foldlevelstart=6
       '';
     })
   ]);
