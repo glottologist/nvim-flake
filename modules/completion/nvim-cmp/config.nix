@@ -43,7 +43,6 @@ in {
       "vsnip" = "[VSnip]";
       "buffer" = "[Buffer]";
       "crates" = "[Crates]";
-      "path" = "[Path]";
     };
 
     vim.luaConfigRC.completion = mkIf (cfg.type == "nvim-cmp") (dagPlacement ''
