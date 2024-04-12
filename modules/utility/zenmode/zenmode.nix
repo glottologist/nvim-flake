@@ -5,7 +5,7 @@
 }:
 with lib;
 with builtins; {
-  options.vim.zenmode = {
+  options.vim.utility.zenmode = {
     enable = mkEnableOption "Enable distraction free writing";
   };
 }

@@ -6,7 +6,7 @@
 }:
 with lib;
 with builtins; let
-  cfg = config.vim.eyeliner;
+  cfg = config.vim.utility.eyeliner;
 in {
   config = mkIf (cfg.enable) {
     vim.startPlugins = [

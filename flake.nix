@@ -482,5 +482,10 @@
       url = "github:tpope/vim-repeat";
       flake = false;
     };
+
+    wakatime = {
+      url = "github:vim-scripts/vim-wakatime";
+      flake = false;
+    };
   };
 }

@@ -6,7 +6,7 @@
 }:
 with lib;
 with builtins; let
-  cfg = config.vim.easyalign;
+  cfg = config.vim.utility.easyalign;
 in {
   config = mkIf (cfg.enable) {
     vim.startPlugins = [

@@ -5,7 +5,7 @@
 }:
 with lib;
 with builtins; {
-  options.vim.easyalign = {
+  options.vim.utility.easyalign = {
     enable = mkEnableOption "Enable easy alignment";
   };
 }

@@ -5,7 +5,7 @@
 }:
 with lib;
 with builtins; {
-  options.vim.eyeliner = {
+  options.vim.utility.eyeliner = {
     enable = mkEnableOption "Enable quick jumps";
   };
 }

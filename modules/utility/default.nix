@@ -8,7 +8,7 @@ _: {
     ./icon-picker
     ./motion
     ./telescope
-    ./telescope
+    ./wakatime
     ./zenmode
   ];
 }

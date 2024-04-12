@@ -77,6 +77,7 @@ with lib; let
     "vim-markdown"
     "vim-repeat"
     "vim-vsnip"
+    "wakatime"
     "which-key"
     "zenmode"
     "zenbones"

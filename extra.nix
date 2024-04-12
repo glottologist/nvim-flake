@@ -25,9 +25,6 @@ inputs: let
         };
       };
 
-      vim.zenmode.enable = true;
-      vim.eyeliner.enable = true;
-      vim.easyalign.enable = true;
 
       vim.lsp = {
         formatOnSave = true;
@@ -147,9 +144,12 @@ inputs: let
       };
 
       vim.utility = {
+         eyeliner.enable = true;
         colorizer.enable = true;
-        icon-picker.enable = true;
         diffview-nvim.enable = true;
+        easyalign.enable = true;
+        icon-picker.enable = true;
+        zenmode.enable = true;
         motion = {
           hop.enable = true;
           leap.enable = true;

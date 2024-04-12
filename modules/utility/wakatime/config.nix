@@ -6,15 +6,11 @@
 }:
 with lib;
 with builtins; let
-  cfg = config.vim.utility.zenmode;
+  cfg = config.vim.utility.wakatime;
 in {
   config = mkIf (cfg.enable) {
     vim.startPlugins = [
-      "zenmode"
+      "wakatime"
     ];
-
-    vim.nnoremap = {
-      "<leader>zt" = "<cmd> ZenMode<CR>";
-    };
   };
 }
