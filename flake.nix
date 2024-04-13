@@ -484,7 +484,7 @@
     };
 
     wakatime = {
-      url = "github:vim-scripts/vim-wakatime";
+      url = "github:wakatime/vim-wakatime";
       flake = false;
     };
   };

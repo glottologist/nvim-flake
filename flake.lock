@@ -1291,6 +1291,7 @@
         "vim-repeat": "vim-repeat",
         "vim-startify": "vim-startify",
         "vim-vsnip": "vim-vsnip",
+        "wakatime": "wakatime",
         "which-key": "which-key",
         "zenbones": "zenbones",
         "zenmode": "zenmode",
@@ -1573,6 +1574,22 @@
       "original": {
         "owner": "hrsh7th",
         "repo": "vim-vsnip",
+        "type": "github"
+      }
+    },
+    "wakatime": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1712821425,
+        "narHash": "sha256-1w6M6hnDOu4ruAUnUcAbFViUzZDGslrdYXx5jVrspc8=",
+        "owner": "wakatime",
+        "repo": "vim-wakatime",
+        "rev": "5d11a253dd1ecabd4612a885175216032d814300",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wakatime",
+        "repo": "vim-wakatime",
         "type": "github"
       }
     },

@@ -25,7 +25,6 @@ inputs: let
         };
       };
 
-
       vim.lsp = {
         formatOnSave = true;
         lspkind.enable = false;
@@ -51,8 +50,8 @@ inputs: let
         elm.enable = isDeveloper;
         fsharp.enable = isDeveloper;
         markdown = {
-        enable = true;
-        glow.enable=true;
+          enable = true;
+          glow.enable = true;
         };
         haskell.enable = isDeveloper;
         ocaml.enable = isDeveloper;
@@ -144,11 +143,12 @@ inputs: let
       };
 
       vim.utility = {
-         eyeliner.enable = true;
+        eyeliner.enable = true;
         colorizer.enable = true;
         diffview-nvim.enable = true;
         easyalign.enable = true;
         icon-picker.enable = true;
+        wakatime.enable = true;
         zenmode.enable = true;
         motion = {
           hop.enable = true;

@@ -36,7 +36,7 @@ in {
         else ""
       }
         ${
-        if config.vim.zenmode.enable
+        if config.vim.utility.zenmode.enable
         then ''
           -- ZenMode
           ["<leader>z"] = {
@@ -290,7 +290,7 @@ in {
       }
 
         ${
-        if config.vim.eyeliner.enable
+        if config.vim.utility.eyeliner.enable
         then ''
           -- Eyeliner
           ["<leader>e"] = { name = "+Eyeliner" },
@@ -300,7 +300,7 @@ in {
       }
 
         ${
-        if config.vim.easyalign.enable
+        if config.vim.utility.easyalign.enable
         then ''
           -- Easy Align
           ["<leader>a"] = { name = "+Align" },
