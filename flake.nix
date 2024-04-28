@@ -385,7 +385,7 @@
     };
 
     keystrokes = {
-      url = "dheepak/keystrokes.nvim";
+      url = "github:dheepak/keystrokes.nvim";
       flake = false;
     };
 
