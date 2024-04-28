@@ -453,14 +453,10 @@
     };
 
     # Dependencies
+
     plenary-nvim = {
       # (required by crates-nvim)
       url = "github:nvim-lua/plenary.nvim";
-      flake = false;
-    };
-
-    nui-nvim = {
-      url = "github:MunifTanjim/nui.nvim";
       flake = false;
     };
 
@@ -483,7 +479,7 @@
     };
 
     nui-nvim = {
-      # (required by noice.nvim)
+      # (required by noice.nvim and hardtime)
       url = "github:MunifTanjim/nui.nvim";
       flake = false;
     };
