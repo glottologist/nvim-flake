@@ -310,6 +310,15 @@ in {
         else ""
       }
 
+        ${
+        if config.vim.utility.hardtime.enable
+        then ''
+          -- Hardtime
+          ["<leader>u"] = { name = "+Utilities" },
+          ["<leader>uh"] = { "", "Hardtime toggle" },
+        ''
+        else ""
+      }
 
       })
     '';

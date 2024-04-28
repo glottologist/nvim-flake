@@ -384,13 +384,17 @@
       flake = false;
     };
 
-
     which-key = {
       url = "github:folke/which-key.nvim";
       flake = false;
     };
     easyalign = {
       url = "github:junegunn/vim-easy-align";
+      flake = false;
+    };
+
+    hardtime = {
+      url = "github:m4xshen/hardtime.nvim";
       flake = false;
     };
 
@@ -452,6 +456,11 @@
     plenary-nvim = {
       # (required by crates-nvim)
       url = "github:nvim-lua/plenary.nvim";
+      flake = false;
+    };
+
+    nui-nvim = {
+      url = "github:MunifTanjim/nui.nvim";
       flake = false;
     };
 

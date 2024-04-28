@@ -5,6 +5,7 @@ _: {
     ./diffview
     ./easyalign
     ./eyeliner
+    ./hardtime
     ./icon-picker
     ./motion
     ./telescope

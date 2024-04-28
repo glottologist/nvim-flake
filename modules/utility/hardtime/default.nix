@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ./keystrokes.nix
+    ./hardtime.nix
     ./config.nix
   ];
 }
