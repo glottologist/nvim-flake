@@ -398,6 +398,10 @@
       flake = false;
     };
 
+    keylog-nvim = {
+      url = "github:glottologist/keylog.nvim";
+      flake = false;
+    };
     cheatsheet-nvim = {
       url = "github:sudormrfbin/cheatsheet.nvim";
       flake = false;

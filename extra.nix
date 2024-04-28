@@ -148,6 +148,7 @@ inputs: let
         diffview-nvim.enable = true;
         easyalign.enable = true;
         hardtime.enable = true;
+        keylog.enable = true;
         icon-picker.enable = true;
         wakatime.enable = true;
         zenmode.enable = true;

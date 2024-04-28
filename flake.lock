@@ -547,6 +547,22 @@
         "type": "github"
       }
     },
+    "hardtime": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713318810,
+        "narHash": "sha256-HPpBCHFj+YHe914aB1R98iJ11MGTzY5yhfOnhh27V3w=",
+        "owner": "m4xshen",
+        "repo": "hardtime.nvim",
+        "rev": "eaf4bc31b86419c26ad7b3a142dd36ca545ca2e4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "m4xshen",
+        "repo": "hardtime.nvim",
+        "type": "github"
+      }
+    },
     "hop-nvim": {
       "flake": false,
       "locked": {
@@ -1241,6 +1257,7 @@
         "git-worktrees": "git-worktrees",
         "gitsigns-nvim": "gitsigns-nvim",
         "glow-nvim": "glow-nvim",
+        "hardtime": "hardtime",
         "hop-nvim": "hop-nvim",
         "icon-picker-nvim": "icon-picker-nvim",
         "indent-blankline": "indent-blankline",
