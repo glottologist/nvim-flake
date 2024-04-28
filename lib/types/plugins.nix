@@ -35,7 +35,6 @@ with lib; let
     "hop-nvim"
     "icon-picker-nvim"
     "indent-blankline"
-    "keystrokes"
     "kommentary"
     "leap-nvim"
     "lsp-signature"

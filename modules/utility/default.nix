@@ -6,7 +6,6 @@ _: {
     ./easyalign
     ./eyeliner
     ./icon-picker
-    ./keystrokes
     ./motion
     ./telescope
     ./wakatime
