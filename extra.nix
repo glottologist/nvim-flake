@@ -147,7 +147,7 @@ inputs: let
         colorizer.enable = true;
         diffview-nvim.enable = true;
         easyalign.enable = true;
-        hardtime.enable = true;
+        hardtime.enable = false;
         keylog.enable = true;
         icon-picker.enable = true;
         wakatime.enable = true;
