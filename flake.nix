@@ -384,10 +384,6 @@
       flake = false;
     };
 
-    keystrokes = {
-      url = "github:dheepak/keystrokes.nvim";
-      flake = false;
-    };
 
     which-key = {
       url = "github:folke/which-key.nvim";
