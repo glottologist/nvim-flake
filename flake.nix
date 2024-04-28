@@ -399,7 +399,7 @@
     };
 
     keylog-nvim = {
-      url = "github:glottologist/keylog.nvim/9e326da853efdb064d9e2c5361cdb0a73231e1c1";
+      url = "github:glottologist/keylog.nvim/056c870fdd2fea5053f4f797231ef0551c1d477e";
       flake = false;
     };
     cheatsheet-nvim = {
