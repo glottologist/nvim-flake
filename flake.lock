@@ -614,17 +614,17 @@
     "keylog-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1714299934,
-        "narHash": "sha256-/irykuC9Tu0gl/5UX4FNlli/KFJ1aA4eWCtOa3aopEQ=",
+        "lastModified": 1714302867,
+        "narHash": "sha256-Ld4s6WjVxD2oqcxnwlBghFt0EBt8z0G2036XbxSiC5I=",
         "owner": "glottologist",
         "repo": "keylog.nvim",
-        "rev": "d78c3cbeb8c48e0183a83f7fd68041cd6f994bd3",
+        "rev": "0b643a75e5edd446b6fc45543b0315abac8cb483",
         "type": "github"
       },
       "original": {
         "owner": "glottologist",
         "repo": "keylog.nvim",
-        "rev": "d78c3cbeb8c48e0183a83f7fd68041cd6f994bd3",
+        "rev": "0b643a75e5edd446b6fc45543b0315abac8cb483",
         "type": "github"
       }
     },
