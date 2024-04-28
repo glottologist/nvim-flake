@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ./hardtime.nix
+    ./keylog.nix
     ./config.nix
   ];
 }
