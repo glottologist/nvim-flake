@@ -400,7 +400,9 @@
 
     keylog-nvim = {
       url = "github:glottologist/keylog.nvim";
+       rev = "b75c21f9307f5070311dc295ac202c51d3bc1d4e";
       flake = false;
+
     };
     cheatsheet-nvim = {
       url = "github:sudormrfbin/cheatsheet.nvim";
