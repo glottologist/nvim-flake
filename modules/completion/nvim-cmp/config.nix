@@ -39,10 +39,11 @@ in {
     ];
 
     vim.autocomplete.sources = {
-      "nvim-cmp" = null;
+      "treesitter" = "[Treesitter]";
       "vsnip" = "[VSnip]";
       "buffer" = "[Buffer]";
       "crates" = "[Crates]";
+      "nvim-cmp" = null;
     };
 
     vim.luaConfigRC.completion = mkIf (cfg.type == "nvim-cmp") (dagPlacement ''
@@ -110,7 +111,7 @@ in {
           end, { 'i', 's' })
         },
         completion = {
-          completeopt = 'menu,menuone,noinsert',
+          completeopt = vim.o.completeopt,
         },
         formatting = {
           format =
