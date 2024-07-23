@@ -24,7 +24,7 @@
       flake = {
         lib = {
           inherit (import ./lib/stdlib-extended.nix nixpkgs.lib) nvim;
-          inherit (import ./extra.nix inputs) neovimConfiguration;
+          inherit (import ./configuration.nix inputs) neovimConfiguration;
         };
 
         homeManagerModules = {

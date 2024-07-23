@@ -24,6 +24,8 @@ in {
         "<silent><leader>ldc" = "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>";
         "<silent><leader>ldp" = "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>";
         "<silent><leader>ldn" = "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>";
+        "<silent><C-f>" = "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>";
+        "<silent><C-b>" = "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>";
       }
       // (
         if (!cfg.nvimCodeActionMenu.enable)

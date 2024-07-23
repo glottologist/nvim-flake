@@ -155,6 +155,7 @@ in {
           ["<leader>ld"] = { name = "+Diagnostics" },
           ["<leader>ldn"] = { "<cmd>lua vim.diagnostic.goto_next()<CR>", "Next Diagnostic" },
           ["<leader>ldp"] = { "<cmd>lua vim.diagnostic.goto_prev()<CR>", "Previous Diagnostic" },
+
         ''
         else ""
       }
@@ -198,7 +199,7 @@ in {
       ${
         if config.vim.lsp.lspSignature.enable
         then ''
-          ["<leader>ls"] = { "<cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>", "Signature Help`" },
+          ["<leader>ls"] = { "<cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>", "Signature Help" },
         ''
         else ""
       }

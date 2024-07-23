@@ -20,14 +20,14 @@ in {
       {
         "<silent><leader>lf" = "<cmd>lua require'lspsaga.provider'.lsp_finder()<CR>";
         "<silent><leader>lh" = "<cmd>lua require('lspsaga.hover').render_hover_doc()<CR>";
+        "<silent><leader>lr" = "<cmd>lua require'lspsaga.rename'.rename()<CR>";
+        "<silent><leader>lpd" = "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>";
+        "<silent><leader>ldl" = "<cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>";
+        "<silent><leader>ldc" = "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>";
+        "<silent><leader>ldp" = "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>";
+        "<silent><leader>ldn" = "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>";
         "<silent><C-f>" = "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>";
         "<silent><C-b>" = "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>";
-        "<silent><leader>lr" = "<cmd>lua require'lspsaga.rename'.rename()<CR>";
-        "<silent><leader>ld" = "<cmd>lua require'lspsaga.provider'.preview_definition()<CR>";
-        "<silent><leader>ll" = "<cmd>lua require'lspsaga.diagnostic'.show_line_diagnostics()<CR>";
-        "<silent><leader>lc" = "<cmd>lua require'lspsaga.diagnostic'.show_cursor_diagnostics()<CR>";
-        "<silent><leader>lp" = "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_prev()<CR>";
-        "<silent><leader>ln" = "<cmd>lua require'lspsaga.diagnostic'.lsp_jump_diagnostic_next()<CR>";
       }
       // (
         if (!cfg.nvimCodeActionMenu.enable)

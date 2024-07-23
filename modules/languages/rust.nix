@@ -88,7 +88,7 @@ in {
         local rustopts = {
           tools = {
             autoSetHints = true,
-            hover_with_actions = false,
+            hover_with_actions = true,
             inlay_hints = {
               only_current_line = false,
             }

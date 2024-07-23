@@ -8,7 +8,7 @@ packages: inputs: {
 }:
 with lib; let
   cfg = config.programs.neovim-flake;
-  inherit (import ../../extra.nix inputs) neovimConfiguration;
+  inherit (import ../../configuration.nix inputs) neovimConfiguration;
   set = neovimConfiguration {
     inherit pkgs inputs;
     modules = [cfg.settings];
