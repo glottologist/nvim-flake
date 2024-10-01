@@ -18,6 +18,7 @@ inputs: let
       vim = {
         viAlias = true;
         vimAlias = true;
+        useSystemClipboard = true;
         debugMode = {
           enable = false;
           level = 20;

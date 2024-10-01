@@ -24,24 +24,26 @@ in {
       "<right>" = "<nop>";
     };
 
-    vim.nnoremap = mkIf cfg.mapLeaderSpace {
-      "<space>" = "<nop>";
-    } //  mkIf cfg.useMetaForMovement {
-       "<M-h>" = "<C-w>h";
-       "<M-j>" = "<C-w>j";
-       "<M-k>" = "<C-w>k";
-       "<M-l>" = "<C-w>l";
-       "<M-H>" = "<C-w>H";
-       "<M-J>" = "<C-w>J";
-       "<M-K>" = "<C-w>K";
-       "<M-L>" = "<C-w>L";
-       "<M-x>" = "<C-w>x";
-       "<M-=>" = "<C-w>=";
-       "<M-+>" = "<C-w>+";
-       "<M-->" = "<C-w>-";
-       "<M-<>" = "<C-w><";
-       "<M->>" = "<C-w>>";
-    };
+    vim.nnoremap =
+      mkIf cfg.mapLeaderSpace {
+        "<space>" = "<nop>";
+      }
+      // mkIf cfg.useMetaForMovement {
+        "<M-h>" = "<C-w>h";
+        "<M-j>" = "<C-w>j";
+        "<M-k>" = "<C-w>k";
+        "<M-l>" = "<C-w>l";
+        "<M-H>" = "<C-w>H";
+        "<M-J>" = "<C-w>J";
+        "<M-K>" = "<C-w>K";
+        "<M-L>" = "<C-w>L";
+        "<M-x>" = "<C-w>x";
+        "<M-=>" = "<C-w>=";
+        "<M-+>" = "<C-w>+";
+        "<M-->" = "<C-w>-";
+        "<M-<>" = "<C-w><";
+        "<M->>" = "<C-w>>";
+      };
 
     vim.configRC.basic = nvim.dag.entryAfter ["globalsScript"] ''
       " Debug mode settings
