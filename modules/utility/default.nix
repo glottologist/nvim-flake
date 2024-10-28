@@ -7,7 +7,6 @@ _: {
     ./eyeliner
     ./hardtime
     ./icon-picker
-    ./keylog
     ./motion
     ./telescope
     ./wakatime
