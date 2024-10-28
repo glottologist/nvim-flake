@@ -19,11 +19,20 @@ in {
       vim.startPlugins = ["glow-nvim"];
 
       vim.globals = {
-        "glow_binary_path" = "${pkgs.glow}/bin";
+        "glow_binary_path" = "${pkgs.glow}/bin/glow";
       };
 
+      vim.luaConfigRC.glow = nvim.dag.entryAnywhere ''
+        require('glow').setup({
+               glow_path = "${pkgs.glow}/bin/glow",
+               border = "shadow",
+               pager = false,
+               width = 120,
+             })
+      '';
+
       vim.configRC.glow = nvim.dag.entryAnywhere ''
-        autocmd FileType markdown noremap <leader>pm :Glow<CR>
+        autocmd FileType markdown noremap <leader>pm <cmd>Glow<CR>
       '';
     })
   ]);
