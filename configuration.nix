@@ -46,6 +46,7 @@ inputs: let
         nix.enable = true;
         html.enable = isDeveloper;
         sql.enable = isDeveloper;
+        solidity.enable = isDeveloper;
         ligo.enable = isDeveloper;
         clojure.enable = isDeveloper;
         elm.enable = isDeveloper;

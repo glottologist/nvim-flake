@@ -78,6 +78,7 @@ with lib; let
     "tokyonight"
     "trouble"
     "vim-markdown"
+    "vim-solidity"
     "vim-repeat"
     "vim-vsnip"
     "wakatime"

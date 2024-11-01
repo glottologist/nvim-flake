@@ -25,6 +25,7 @@ in {
     ./python.nix
     ./rust.nix
     ./scala.nix
+    ./solidity.nix
     ./sql.nix
     ./ts.nix
     ./zig.nix
