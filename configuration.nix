@@ -162,7 +162,7 @@ inputs: let
       vim.notes = {
         obsidian = {
           enable = true;
-          dir = "~/Documents/notes/";
+          dir = "~/Documents/knowledge/";
         };
         todo-comments.enable = true;
       };

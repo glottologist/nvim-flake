@@ -64,6 +64,8 @@ in {
       set shortmess+=c
       set tm=${toString cfg.mapTimeout}
       set hidden
+      set foldlevel=${toString cfg.foldLevel}
+      set conceallevel=${toString cfg.concealLevel}
       ${optionalString cfg.splitBelow ''
         set splitbelow
       ''}

@@ -109,6 +109,18 @@ with builtins; {
       default = 1;
       description = "Height of the command pane";
     };
+    foldLevel = mkOption {
+      type = types.int;
+      default = 99;
+      description = "Folds with a higher level than this will be closed";
+    };
+    concealLevel =
+      mkOption {
+        type = types.int;
+        default = 2;
+        description = "Determine how text with the " conceal " syntax attribute |:syn-conceal|
+    is shown";
+      };
 
     updateTime = mkOption {
       type = types.int;
