@@ -43,6 +43,7 @@ inputs: let
         enableExtraDiagnostics = true;
 
         ansible.enable = isDeveloper;
+        bash.enable = isDeveloper;
         nix.enable = true;
         html.enable = isDeveloper;
         sql.enable = isDeveloper;
@@ -122,6 +123,11 @@ inputs: let
 
       vim.tabline = {
         nvimBufferline.enable = true;
+      };
+
+      vim.treesitter = {
+        enable = true;
+        fold = true;
       };
 
       vim.treesitter.context.enable = true;

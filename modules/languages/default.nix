@@ -9,6 +9,7 @@ with lib; let
 in {
   imports = [
     ./ansible.nix
+    ./bash.nix
     ./clojure.nix
     ./dart
     ./elixir
