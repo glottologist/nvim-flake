@@ -24,7 +24,7 @@ with builtins; let
   };
 in {
   options.vim.languages.bash = {
-    enable = mkEnableOption "Clojure language support";
+    enable = mkEnableOption "Bash language support";
 
     treesitter = {
       enable = mkOption {
