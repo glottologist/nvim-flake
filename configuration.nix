@@ -99,7 +99,7 @@ inputs: let
       vim.theme = {
         enable = true;
         name = "tokyonight";
-        style = "moon";
+        style = "storm";
         transparent = false;
       };
 
@@ -148,7 +148,7 @@ inputs: let
       };
 
       vim.notify = {
-        nvim-notify.enable = true;
+        nvim-notify.enable = false;
       };
 
       vim.utility = {
