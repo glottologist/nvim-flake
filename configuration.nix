@@ -98,10 +98,11 @@ inputs: let
 
       vim.theme = {
         enable = true;
-        name = "zenbones";
-        style = "light";
+        name = "tokyonight";
+        style = "moon";
         transparent = false;
       };
+
       vim.autopairs.enable = true;
 
       vim.autocomplete = {
