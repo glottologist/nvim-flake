@@ -99,7 +99,7 @@ inputs: let
       vim.theme = {
         enable = true;
         name = "tokyonight";
-        style = "storm";
+        style = "day";
         transparent = false;
       };
 
