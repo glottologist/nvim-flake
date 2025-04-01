@@ -160,16 +160,18 @@ in {
         else ""
       }
 
+
+
         ${
         if config.vim.lsp.trouble.enable
         then ''
           -- Trouble
-          ["<leader>ldt"] =  { "<cmd>TroubleToggle<CR>","Toggle Diagnostics" };
-          ["<leader>ldw"] = { "<cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace Diagnostics" };
-          ["<leader>ldd"] = { "<cmd>TroubleToggle lsp_references<CR>","Document Diagnostics" };
-          ["<leader>ldr"] = { "<cmd>TroubleToggle lsp_references<CR>","LSP References" };
-          ["<leader>ldq"] = { "<cmd>TroubleToggle quickfix<CR>","Quickfix" };
-          ["<leader>ldl"] = { "<cmd>TroubleToggle loclist<CR>","LOC List" };
+          ["<leader>ldt"] =  { "<cmd>TroubleToggle<CR>","Toggle Diagnostics" },
+          ["<leader>ldw"] = { "<cmd>TroubleToggle workspace_diagnostics<CR>", "Workspace Diagnostics" },
+          ["<leader>ldd"] = { "<cmd>TroubleToggle lsp_references<CR>","Document Diagnostics" },
+          ["<leader>ldr"] = { "<cmd>TroubleToggle lsp_references<CR>","LSP References" },
+          ["<leader>ldq"] = { "<cmd>TroubleToggle quickfix<CR>","Quickfix" },
+          ["<leader>ldl"] = { "<cmd>TroubleToggle loclist<CR>","LOC List" },
         ''
         else ""
       }
@@ -189,6 +191,25 @@ in {
         ''
         else ""
       }
+
+      ${
+        if config.vim.ai.code-companion.enable
+        then ''
+          ["<leader>c"] = { name = "+Companion" },
+          ["<leader>ca"] = { ":CodeCompanionActions<cr>", "Companion Actions" };
+          ["<leader>ch"] = { ":CodeCompanionChat Toggle<cr>", "Chat Toggle" };
+          ["<leader>cb"] = { ":lua require'codecompanion'.prompt('buffer')<cr>", "Buffer" };
+          ["<leader>cc"] = { ":lua require'codecompanion'.prompt('commit')<cr>", "Commit" };
+          ["<leader>ce"] = { ":lua require'codecompanion'.prompt('explain')<cr>", "Explain" };
+          ["<leader>cf"] = { ":lua require'codecompanion'.prompt('fix')<cr>", "Fix" };
+          ["<leader>cl"] = { ":lua require'codecompanion'.prompt('lsp')<cr>", "Lsp" };
+          ["<leader>ct"] = { ":lua require'codecompanion'.prompt('test')<cr>", "Test" };
+        ''
+        else ""
+      }
+
+
+
       ${
         if config.vim.lsp.nvimCodeActionMenu.enable
         then ''

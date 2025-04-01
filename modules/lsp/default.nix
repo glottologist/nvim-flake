@@ -11,6 +11,7 @@ _: {
     # lsp plugins
     ./lspsaga
     ./nvim-code-action-menu
+    ./actions-preview-nvim
     ./trouble
     ./lsp-signature
     ./lightbulb

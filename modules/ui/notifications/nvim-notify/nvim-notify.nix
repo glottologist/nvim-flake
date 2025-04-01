@@ -14,7 +14,7 @@ with builtins; {
     };
     timeout = mkOption {
       type = types.int;
-      default = 1000;
+      default = 500;
       description = "The timeout of the notification";
     };
     background_colour = mkOption {

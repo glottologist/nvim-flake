@@ -25,13 +25,15 @@ inputs: let
           logFile = "/tmp/nvim.log";
         };
       };
+      vim.ai.code-companion.enable = true;
 
       vim.lsp = {
         formatOnSave = true;
         lspkind.enable = false;
         lightbulb.enable = true;
-        lspsaga.enable = true;
-        nvimCodeActionMenu.enable = true;
+        lspsaga.enable = false;
+        nvimCodeActionMenu.enable = false;
+        actionsPreview.enable = true;
         trouble.enable = true;
         lspSignature.enable = true;
       };
@@ -148,7 +150,10 @@ inputs: let
       };
 
       vim.notify = {
-        nvim-notify.enable = false;
+        nvim-notify = {
+          enable = false;
+          background_colour = "#F0EDEC";
+        };
       };
 
       vim.utility = {

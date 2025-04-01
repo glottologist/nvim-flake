@@ -7,6 +7,7 @@
     ./basic
     ./core
     ./completion
+    ./ai
     ./theme
     ./statusline
     ./tabline

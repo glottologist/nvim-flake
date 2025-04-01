@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "actions-preview-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1740589350,
+        "narHash": "sha256-MP1hohDL2JFembwW+cb2S+v2Y7j0iZw1jPPKTZiNCWI=",
+        "owner": "aznhe21",
+        "repo": "actions-preview.nvim",
+        "rev": "4ab7842eb6a5b6d2b004f8234dcf33382a0fdde2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "aznhe21",
+        "repo": "actions-preview.nvim",
+        "type": "github"
+      }
+    },
     "alpha-nvim": {
       "flake": false,
       "locked": {
@@ -173,6 +189,22 @@
       "original": {
         "owner": "hrsh7th",
         "repo": "cmp-vsnip",
+        "type": "github"
+      }
+    },
+    "code-companion-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743460616,
+        "narHash": "sha256-VaxUvNdBPNoUXK1MzRDFVttQeyqPs5h0zlNgYeIw8yQ=",
+        "owner": "olimorris",
+        "repo": "codecompanion.nvim",
+        "rev": "7ffbc5a8f7ba349cea0c3f20bac6c404d4130a4a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "olimorris",
+        "repo": "codecompanion.nvim",
         "type": "github"
       }
     },
@@ -1242,6 +1274,7 @@
     },
     "root": {
       "inputs": {
+        "actions-preview-nvim": "actions-preview-nvim",
         "alpha-nvim": "alpha-nvim",
         "bufdelete-nvim": "bufdelete-nvim",
         "catppuccin": "catppuccin",
@@ -1253,6 +1286,7 @@
         "cmp-path": "cmp-path",
         "cmp-treesitter": "cmp-treesitter",
         "cmp-vsnip": "cmp-vsnip",
+        "code-companion-nvim": "code-companion-nvim",
         "colorizer": "colorizer",
         "comment-nvim": "comment-nvim",
         "copilot-lua": "copilot-lua",

@@ -75,6 +75,11 @@
       flake = false;
     };
 
+    code-companion-nvim = {
+      url = "github:olimorris/codecompanion.nvim";
+      flake = false;
+    };
+
     lsp-format = {
       url = "github:lukas-reineke/lsp-format.nvim";
       flake = false;
@@ -112,6 +117,11 @@
 
     nvim-code-action-menu = {
       url = "github:weilbith/nvim-code-action-menu";
+      flake = false;
+    };
+
+    actions-preview-nvim = {
+      url = "github:aznhe21/actions-preview.nvim";
       flake = false;
     };
 
