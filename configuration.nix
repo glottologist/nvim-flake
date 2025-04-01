@@ -25,7 +25,10 @@ inputs: let
           logFile = "/tmp/nvim.log";
         };
       };
-      vim.ai.code-companion.enable = true;
+      vim.ai.code-companion = {
+          enable = true;
+          adapter = "anthropic";
+          };
 
       vim.lsp = {
         formatOnSave = true;
