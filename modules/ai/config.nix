@@ -38,6 +38,12 @@ in {
       -- custom prompts
                         vim.api.nvim_set_keymap("v", "<leader>cpe", ":lua require'codecompanion'.prompt('audit')<cr>", opts)
                         vim.api.nvim_set_keymap("n", "<leader>cpe", ":lua require'codecompanion'.prompt('audit')<cr>", opts)
+                        
+                        vim.api.nvim_set_keymap("v", "<leader>cpc", ":lua require'codecompanion'.prompt('comment')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpc", ":lua require'codecompanion'.prompt('comment')<cr>", opts)
+
+                        vim.api.nvim_set_keymap("v", "<leader>cpt", ":lua require'codecompanion'.prompt('tests')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpt", ":lua require'codecompanion'.prompt('tests')<cr>", opts)
 
 
                       require("codecompanion").setup({
