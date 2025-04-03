@@ -201,8 +201,12 @@
       {
         role = "user",
         content = function(context)
+  if not context.user_prompt then
+    -- Prompt the user for input dynamically (pseudo-code)
+    context.user_prompt = vim.fn.input("Enter the subject that you want the interview to be on: ")
+  end
         return "Hello! I'm ready to start the interview in " ..  context.user_prompt .. ". Here is the problem statement and my code implementation."
-    end
+end
       },
     },
   },
@@ -224,6 +228,16 @@
           return "You are an expert in the subject that the user will specify."
             .. "Give details answers to  questions along with suggested further resources for further learning."
         end,
+      },
+      {
+        role = "user",
+        content = function(context)
+  if not context.user_prompt then
+    -- Prompt the user for input dynamically (pseudo-code)
+    context.user_prompt = vim.fn.input("Enter the subject that you want the expert in: ")
+  end
+  return "Please be an expert on " .. context.user_prompt
+end
       },
     },
   },
@@ -251,6 +265,16 @@
           visible = true,
           contains_code = false,
         },
+      },
+      {
+        role = "user",
+        content = function(context)
+  if not context.user_prompt then
+    -- Prompt the user for input dynamically (pseudo-code)
+    context.user_prompt = vim.fn.input("Enter the language and level for your lesson: ")
+  end
+  return "Please start a " .. context.user_prompt .. " language lesson"
+end
       },
     },
   }
