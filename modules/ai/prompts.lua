@@ -92,7 +92,7 @@
         index=7,
         is_default=true,
         is_slash_cmd = true,
-        short_name = "audit",
+        short_name = "tests",
         auto_submit = true,
         user_prompt=false,
         

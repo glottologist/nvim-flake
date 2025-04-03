@@ -206,6 +206,8 @@ in {
           ["<leader>ct"] = { ":lua require'codecompanion'.prompt('test')<cr>", "Test" },
           ["<leader>cp"] = { name = "+Custom Promts" },
           ["<leader>cpa"] = { ":lua require'codecompanion'.prompt('audit')<cr>", "Test" },
+          ["<leader>cpc"] = { ":lua require'codecompanion'.prompt('comment')<cr>", "Test" },
+          ["<leader>cpt"] = { ":lua require'codecompanion'.prompt('tests')<cr>", "Test" },
         ''
         else ""
       }
