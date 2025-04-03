@@ -196,14 +196,16 @@ in {
         if config.vim.ai.code-companion.enable
         then ''
           ["<leader>c"] = { name = "+Companion" },
-          ["<leader>ca"] = { ":CodeCompanionActions<cr>", "Companion Actions" };
-          ["<leader>ch"] = { ":CodeCompanionChat Toggle<cr>", "Chat Toggle" };
-          ["<leader>cb"] = { ":lua require'codecompanion'.prompt('buffer')<cr>", "Buffer" };
-          ["<leader>cc"] = { ":lua require'codecompanion'.prompt('commit')<cr>", "Commit" };
-          ["<leader>ce"] = { ":lua require'codecompanion'.prompt('explain')<cr>", "Explain" };
-          ["<leader>cf"] = { ":lua require'codecompanion'.prompt('fix')<cr>", "Fix" };
-          ["<leader>cl"] = { ":lua require'codecompanion'.prompt('lsp')<cr>", "Lsp" };
-          ["<leader>ct"] = { ":lua require'codecompanion'.prompt('test')<cr>", "Test" };
+          ["<leader>ca"] = { ":CodeCompanionActions<cr>", "Companion Actions" },
+          ["<leader>ch"] = { ":CodeCompanionChat Toggle<cr>", "Chat Toggle" },
+          ["<leader>cb"] = { ":lua require'codecompanion'.prompt('buffer')<cr>", "Buffer" },
+          ["<leader>cc"] = { ":lua require'codecompanion'.prompt('commit')<cr>", "Commit" },
+          ["<leader>ce"] = { ":lua require'codecompanion'.prompt('explain')<cr>", "Explain" },
+          ["<leader>cf"] = { ":lua require'codecompanion'.prompt('fix')<cr>", "Fix" },
+          ["<leader>cl"] = { ":lua require'codecompanion'.prompt('lsp')<cr>", "Lsp" },
+          ["<leader>ct"] = { ":lua require'codecompanion'.prompt('test')<cr>", "Test" },
+          ["<leader>cp"] = { name = "+Custom Promts" },
+          ["<leader>cpa"] = { ":lua require'codecompanion'.prompt('audit')<cr>", "Test" },
         ''
         else ""
       }
