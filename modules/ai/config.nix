@@ -36,14 +36,27 @@ in {
                         vim.api.nvim_set_keymap("n", "<leader>ct", ":lua require'codecompanion'.prompt('test')<cr>", opts)
 
       -- custom prompts
-                        vim.api.nvim_set_keymap("v", "<leader>cpe", ":lua require'codecompanion'.prompt('audit')<cr>", opts)
-                        vim.api.nvim_set_keymap("n", "<leader>cpe", ":lua require'codecompanion'.prompt('audit')<cr>", opts)
-                        
+                        vim.api.nvim_set_keymap("v", "<leader>cpa", ":lua require'codecompanion'.prompt('audit')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpa", ":lua require'codecompanion'.prompt('audit')<cr>", opts)
+
                         vim.api.nvim_set_keymap("v", "<leader>cpc", ":lua require'codecompanion'.prompt('comment')<cr>", opts)
                         vim.api.nvim_set_keymap("n", "<leader>cpc", ":lua require'codecompanion'.prompt('comment')<cr>", opts)
 
                         vim.api.nvim_set_keymap("v", "<leader>cpt", ":lua require'codecompanion'.prompt('tests')<cr>", opts)
                         vim.api.nvim_set_keymap("n", "<leader>cpt", ":lua require'codecompanion'.prompt('tests')<cr>", opts)
+
+                        vim.api.nvim_set_keymap("v", "<leader>cpm", ":lua require'codecompanion'.prompt('mnemonic')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpm", ":lua require'codecompanion'.prompt('mnemonic')<cr>", opts)
+
+                        vim.api.nvim_set_keymap("v", "<leader>cpi", ":lua require'codecompanion'.prompt('interview')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpi", ":lua require'codecompanion'.prompt('interview')<cr>", opts)
+
+                        vim.api.nvim_set_keymap("v", "<leader>cpe", ":lua require'codecompanion'.prompt('expert')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpe", ":lua require'codecompanion'.prompt('expert')<cr>", opts)
+
+                        vim.api.nvim_set_keymap("v", "<leader>cpl", ":lua require'codecompanion'.prompt('language')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpl", ":lua require'codecompanion'.prompt('language')<cr>", opts)
+
 
 
                       require("codecompanion").setup({
@@ -53,6 +66,7 @@ in {
                  },
                       display = {
                       chat = {
+                        start_in_insert_mode = true,
                       show_settings =true,
                       },
                              action_palette = {
