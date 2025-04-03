@@ -157,7 +157,7 @@
       is_slash_cmd = true,
       short_name = "interview",
       auto_submit = true,
-      user_prompt = true,
+      user_prompt = false,
     },
     prompts = {
       {
@@ -219,7 +219,7 @@ end
       is_slash_cmd = true,
       short_name = "expert",
       auto_submit = true,
-      user_prompt = true,
+      user_prompt = false,
     },
     prompts = {
       {
@@ -250,7 +250,7 @@ end
       is_slash_cmd = true,
       short_name = "language",
       auto_submit = true,
-      user_prompt = true,
+      user_prompt = false,
     },
     prompts = {
       {
