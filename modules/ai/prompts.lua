@@ -157,14 +157,15 @@
       is_slash_cmd = true,
       short_name = "interview",
       auto_submit = true,
-      user_prompt = false,
+      user_prompt = true,
     },
     prompts = {
       {
         role = "system",
         content = function(context)
-          return "You are a highly experienced, principal-level interviewer specializing in"
-            .. context.filetype
+          local user_input = context.user_prompt or "" -- Get user input from context
+          return "You are a highly experienced, principal-level interviewer specializing in "
+            .. user_input
             .. " at a top-tier tech company, conducting a Staff/Principal Software Engineer interview.\n"
             .. "Input Format:\n"
             .. " - A .md file describing a software problem or use case.\n"

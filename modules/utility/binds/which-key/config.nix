@@ -208,6 +208,10 @@ in {
           ["<leader>cpa"] = { ":lua require'codecompanion'.prompt('audit')<cr>", "Test" },
           ["<leader>cpc"] = { ":lua require'codecompanion'.prompt('comment')<cr>", "Test" },
           ["<leader>cpt"] = { ":lua require'codecompanion'.prompt('tests')<cr>", "Test" },
+          ["<leader>cpm"] = { ":lua require'codecompanion'.prompt('mnemonic')<cr>", "Mnemonic" },
+          ["<leader>cpm"] = { ":lua require'codecompanion'.prompt('interview')<cr>", "Interview" },
+          ["<leader>cpx"] = { ":lua require'codecompanion'.prompt('expert')<cr>", "Expert" },
+          ["<leader>cpl"] = { ":lua require'codecompanion'.prompt('language')<cr>", "Language" },
         ''
         else ""
       }

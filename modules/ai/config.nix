@@ -51,8 +51,8 @@ in {
                         vim.api.nvim_set_keymap("v", "<leader>cpi", ":lua require'codecompanion'.prompt('interview')<cr>", opts)
                         vim.api.nvim_set_keymap("n", "<leader>cpi", ":lua require'codecompanion'.prompt('interview')<cr>", opts)
 
-                        vim.api.nvim_set_keymap("v", "<leader>cpe", ":lua require'codecompanion'.prompt('expert')<cr>", opts)
-                        vim.api.nvim_set_keymap("n", "<leader>cpe", ":lua require'codecompanion'.prompt('expert')<cr>", opts)
+                        vim.api.nvim_set_keymap("v", "<leader>cpx", ":lua require'codecompanion'.prompt('expert')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpx", ":lua require'codecompanion'.prompt('expert')<cr>", opts)
 
                         vim.api.nvim_set_keymap("v", "<leader>cpl", ":lua require'codecompanion'.prompt('language')<cr>", opts)
                         vim.api.nvim_set_keymap("n", "<leader>cpl", ":lua require'codecompanion'.prompt('language')<cr>", opts)
