@@ -163,9 +163,7 @@
       {
         role = "system",
         content = function(context)
-          local user_input = context.user_prompt or "" -- Get user input from context
-          return "You are a highly experienced, principal-level interviewer specializing in "
-            .. user_input
+          return "You are a highly experienced, principal-level interviewer specializing in the language the user will specify,"
             .. " at a top-tier tech company, conducting a Staff/Principal Software Engineer interview.\n"
             .. "Input Format:\n"
             .. " - A .md file describing a software problem or use case.\n"
@@ -202,7 +200,9 @@
       },
       {
         role = "user",
-        content = "Hello! I'm ready to start the interview. Here is the problem statement and my code implementation.",
+        content = function(context)
+        return "Hello! I'm ready to start the interview in " ..  context.user_prompt .. ". Here is the problem statement and my code implementation."
+    end
       },
     },
   },
@@ -221,9 +221,7 @@
       {
         role = "system",
         content = function(context)
-          local user_input = context.user_prompt or "" -- Get user input from context
-          return "You are an expert in"
-            .. " " .. user_input .. "\n"
+          return "You are an expert in the subject that the user will specify."
             .. "Give details answers to  questions along with suggested further resources for further learning."
         end,
       },
@@ -244,9 +242,7 @@
       {
         role = "system",
         content = function(context)
-          local user_input = context.user_prompt or "" -- Get user input from context
-          return "You are a native speaker of"
-            .. " " .. user_input .. "\n"
+          return "You are a native speaker of the language that the user will specify \n"
             .. "You are an expert at teaching that language to a C2 advanced level."
             .. "The lesson will initially begin as a general converstation but when the student makes a mistake, you proceed teach a thorough  lesson on the subject of the mistake. Include audio,video, and text based resources for learning.\n"
             .. "The student can opt to return to the conversation at any point.\n"
