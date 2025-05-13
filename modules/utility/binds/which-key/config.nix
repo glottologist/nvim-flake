@@ -216,7 +216,13 @@ in {
         else ""
       }
 
-
+      ${
+        if config.vim.lsp.actionsPreview.enable
+        then ''
+          ["<leader>la"] = { "<cmd>lua require('actions-preview').code_actions()<CR>",  "Code Action Menu" },
+        ''
+        else ""
+      }
 
       ${
         if config.vim.lsp.nvimCodeActionMenu.enable

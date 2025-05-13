@@ -84,6 +84,7 @@ with lib; let
     "vim-repeat"
     "vim-vsnip"
     "wakatime"
+    "windsurf"
     "which-key"
     "zenbones"
     "zenmode"

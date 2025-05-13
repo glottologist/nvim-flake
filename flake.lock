@@ -1362,6 +1362,7 @@
         "vim-vsnip": "vim-vsnip",
         "wakatime": "wakatime",
         "which-key": "which-key",
+        "windsurf": "windsurf",
         "zenbones": "zenbones",
         "zenmode": "zenmode",
         "zig": "zig"
@@ -1675,6 +1676,22 @@
       "original": {
         "owner": "folke",
         "repo": "which-key.nvim",
+        "type": "github"
+      }
+    },
+    "windsurf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1743787796,
+        "narHash": "sha256-V3ePeEysQFvYO7cVlNsbs5WURo15kJrxWIvx5KkGXTQ=",
+        "owner": "Exafunction",
+        "repo": "windsurf.vim",
+        "rev": "272c6e2755e8faa90e26bcdcd9fde6b9e61751ea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Exafunction",
+        "repo": "windsurf.vim",
         "type": "github"
       }
     },

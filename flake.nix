@@ -95,6 +95,12 @@
       flake = false;
     };
 
+    windsurf = {
+      url = "github:Exafunction/windsurf.vim";
+      flake = false;
+    };
+
+
     trouble = {
       url = "github:folke/trouble.nvim";
       flake = false;
