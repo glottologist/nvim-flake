@@ -26,13 +26,13 @@ inputs: let
         };
       };
       vim.ai = {
-      code-companion = {
-        enable = true;
-        adapter = "anthropic";
-      };
-      windsurf = {
-enable = true;
-      };
+        code-companion = {
+          enable = true;
+          adapter = "anthropic";
+        };
+        windsurf = {
+          enable = true;
+        };
       };
 
       vim.lsp = {
