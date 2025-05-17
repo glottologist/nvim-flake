@@ -42,6 +42,9 @@ in {
                         vim.api.nvim_set_keymap("v", "<leader>cpc", ":lua require'codecompanion'.prompt('comment')<cr>", opts)
                         vim.api.nvim_set_keymap("n", "<leader>cpc", ":lua require'codecompanion'.prompt('comment')<cr>", opts)
 
+                        vim.api.nvim_set_keymap("v", "<leader>cpp", ":lua require'codecompanion'.prompt('pair')<cr>", opts)
+                        vim.api.nvim_set_keymap("n", "<leader>cpp", ":lua require'codecompanion'.prompt('pair')<cr>", opts)
+
                         vim.api.nvim_set_keymap("v", "<leader>cpt", ":lua require'codecompanion'.prompt('tests')<cr>", opts)
                         vim.api.nvim_set_keymap("n", "<leader>cpt", ":lua require'codecompanion'.prompt('tests')<cr>", opts)
 

@@ -207,6 +207,7 @@ in {
           ["<leader>cp"] = { name = "+Custom Promts" },
           ["<leader>cpa"] = { ":lua require'codecompanion'.prompt('audit')<cr>", "Audit" },
           ["<leader>cpc"] = { ":lua require'codecompanion'.prompt('comment')<cr>", "Comment" },
+          ["<leader>cpp"] = { ":lua require'codecompanion'.prompt('pair')<cr>", "Pair" },
           ["<leader>cpt"] = { ":lua require'codecompanion'.prompt('tests')<cr>", "Tests" },
           ["<leader>cpm"] = { ":lua require'codecompanion'.prompt('mnemonic')<cr>", "Mnemonic" },
           ["<leader>cpi"] = { ":lua require'codecompanion'.prompt('interview')<cr>", "Interview" },
