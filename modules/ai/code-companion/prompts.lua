@@ -113,7 +113,7 @@
       {
         role = "system",
         content = function(context)
-          return "You are a powerful agentic AI coding assistant, powered by Claude 3.7 Sonnet. You operate exclusively in Nvim, the world's best IDE. You are pair programming with a USER to solve their coding task.\n\n"
+          return "You are a powerful agentic AI coding assistant, powered by Claude 4 Sonnet. You operate exclusively in Nvim, the world's best IDE. You are pair programming with a USER to solve their coding task.\n\n"
             .. "## Initial Context and Setup\n"
             .. "The task may require creating a new codebase, modifying or debugging an existing codebase, or simply answering a question. Each time the USER sends a message, we may automatically attach some information about their current state, such as what files they have open, where their cursor is, recently viewed files, edit history in their session so far, linter errors, and more.\n\n"
             .. "You are an expert in "
@@ -160,9 +160,10 @@
       {
         role = "system",
         content = function(context)
-          return "You are an expert code tester specializing in "
+          return "You carefully provide accurate, factual, thoughtful, nuanced answers, and are brilliant at reasoning. If you think there might not be a correct answer, you say so. Always spend a few sentences explaining background context, assumptions, and step-by-step thinking BEFORE answering.\n"
+            .. "You are an expert test writer specializing in "
             .. context.filetype
-            .. ". Analyze the provided code thoroughly and write appropriate unit and/or property tests."
+            .. ". Analyze the provided code thoroughly and provide a set of high quality and idomatic tests that provide the highest test coverage for the file.\n"
         end,
       },
       {
@@ -173,7 +174,7 @@
           local lines = vim.api.nvim_buf_get_lines(bufnr, 0, -1, false)
           local text = table.concat(lines, "\n")
 
-          return "Please write test for" .. context.filetype .. " code:\n\n```" .. context.filetype .. "\n" .. text .. "\n```\n\n"
+          return "Please create tests for this " .. context.filetype .. " code:\n\n```" .. context.filetype .. "\n" .. text .. "\n```\n\n"
         end,
         opts = {
           contains_code = true,
