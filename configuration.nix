@@ -34,7 +34,7 @@ inputs: let
           adapter = "anthropic";
         };
         windsurf = {
-          enable = false;
+          enable = true;
         };
         claude-code = {
           enable = true;
