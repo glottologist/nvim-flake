@@ -79,6 +79,10 @@
       url = "github:olimorris/codecompanion.nvim";
       flake = false;
     };
+    leet-code-nvim = {
+      url = "github:kawre/leetcode.nvim";
+      flake = false;
+    };
     claude-code-nvim = {
       url = "github:greggh/claude-code.nvim";
       flake = false;

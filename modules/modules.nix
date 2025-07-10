@@ -8,6 +8,7 @@
     ./core
     ./completion
     ./ai
+    ./code
     ./theme
     ./statusline
     ./tabline

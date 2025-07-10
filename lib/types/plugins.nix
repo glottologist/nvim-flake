@@ -20,6 +20,7 @@ with lib; let
     "crates-nvim"
     "dashboard-nvim"
     "diffview-nvim"
+    "leet-code-nvim"
     "dracula"
     "dressing-nvim"
     "easyalign"

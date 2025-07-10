@@ -25,6 +25,9 @@ inputs: let
           logFile = "/tmp/nvim.log";
         };
       };
+      vim.code = {
+        leetcode.enable = true;
+      };
       vim.ai = {
         code-companion = {
           enable = false;

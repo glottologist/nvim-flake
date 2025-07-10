@@ -6,7 +6,6 @@
 with lib;
 with builtins; let
   cfg = config.vim.ai;
-  prompts = builtins.readFile ./prompts.lua;
 in {
   config = mkIf (cfg.claude-code.enable) {
     vim.startPlugins = ["claude-code-nvim"];
