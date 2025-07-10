@@ -216,6 +216,14 @@ in {
         ''
         else ""
       }
+      ${
+        if config.vim.ai.claude-code.enable
+        then ''
+          ["<leader>c"] = { name = "+Companion" },
+          ["<leader>cc"] = { ":ClaudeCode<cr>", "Claude Code Toggle" },
+        ''
+        else ""
+      }
 
       ${
         if config.vim.lsp.actionsPreview.enable

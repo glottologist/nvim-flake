@@ -27,10 +27,13 @@ inputs: let
       };
       vim.ai = {
         code-companion = {
-          enable = true;
+          enable = false;
           adapter = "anthropic";
         };
         windsurf = {
+          enable = false;
+        };
+        claude-code = {
           enable = true;
         };
       };

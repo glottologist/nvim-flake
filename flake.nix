@@ -79,6 +79,10 @@
       url = "github:olimorris/codecompanion.nvim";
       flake = false;
     };
+    claude-code-nvim = {
+      url = "github:greggh/claude-code.nvim";
+      flake = false;
+    };
 
     lsp-format = {
       url = "github:lukas-reineke/lsp-format.nvim";
@@ -99,7 +103,6 @@
       url = "github:Exafunction/windsurf.vim";
       flake = false;
     };
-
 
     trouble = {
       url = "github:folke/trouble.nvim";

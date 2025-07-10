@@ -46,6 +46,7 @@ with lib; let
     "lualine"
     "modes-nvim"
     "code-companion-nvim"
+    "claude-code-nvim"
     "noice-nvim"
     "nui-nvim"
     "nui-nvim"
