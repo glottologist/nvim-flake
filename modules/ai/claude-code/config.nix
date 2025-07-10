@@ -13,7 +13,6 @@ in {
     vim.luaConfigRC.claude-code = nvim.dag.entryAnywhere ''
 
                  local opts = { noremap=true, silent=true }
-                  vim.api.nvim_set_keymap("n", "<leader>cc", "<cmd>ClaudeCode<CR>", opts)
 
       require("claude-code").setup({
         -- Terminal window settings
