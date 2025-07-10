@@ -96,6 +96,22 @@
         "type": "github"
       }
     },
+    "claude-code-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1751485230,
+        "narHash": "sha256-ZEIPutxhgyaAhq+fJw1lTO781IdjTXbjKy5yKgqSLjM=",
+        "owner": "greggh",
+        "repo": "claude-code.nvim",
+        "rev": "c9a31e51069977edaad9560473b5d031fcc5d38b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "greggh",
+        "repo": "claude-code.nvim",
+        "type": "github"
+      }
+    },
     "clojure-lsp": {
       "flake": false,
       "locked": {
@@ -692,6 +708,22 @@
         "type": "github"
       }
     },
+    "leet-code-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1751277706,
+        "narHash": "sha256-QBt7t+MvUhyfIkyxbsYPnPUGFMDulptcsQx3YtLukwo=",
+        "owner": "kawre",
+        "repo": "leetcode.nvim",
+        "rev": "74f2987292efbe0ba198a35d0ea412c5ae19d31c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kawre",
+        "repo": "leetcode.nvim",
+        "type": "github"
+      }
+    },
     "lsp-format": {
       "flake": false,
       "locked": {
@@ -1280,6 +1312,7 @@
         "catppuccin": "catppuccin",
         "cheatsheet-nvim": "cheatsheet-nvim",
         "cinnamon-nvim": "cinnamon-nvim",
+        "claude-code-nvim": "claude-code-nvim",
         "clojure-lsp": "clojure-lsp",
         "cmp-buffer": "cmp-buffer",
         "cmp-nvim-lsp": "cmp-nvim-lsp",
@@ -1315,6 +1348,7 @@
         "keylog-nvim": "keylog-nvim",
         "kommentary": "kommentary",
         "leap-nvim": "leap-nvim",
+        "leet-code-nvim": "leet-code-nvim",
         "lsp-format": "lsp-format",
         "lsp-signature": "lsp-signature",
         "lspkind": "lspkind",
