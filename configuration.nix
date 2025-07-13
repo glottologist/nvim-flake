@@ -37,7 +37,7 @@ inputs: let
           enable = true;
         };
         claude-code = {
-          enable = true;
+          enable = false;
         };
       };
 
