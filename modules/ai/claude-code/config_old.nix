@@ -9,17 +9,9 @@ with builtins; let
 in {
   config = mkIf (cfg.claude-code.enable) {
     vim.startPlugins = ["claude-code-nvim"];
-    vim.luaConfigRC.claude-code = lib.nvim.dag.entryAnywhere ''
-      -- Safely load claude-code with comprehensive error handling
-      local function safe_setup_claude_code()
-        local ok, claude_code = pcall(require, "claude-code")
-        if not ok then
-          vim.notify("Failed to load claude-code: " .. tostring(claude_code), vim.log.levels.ERROR)
-          return false
-        end
 
-        local setup_ok, setup_err = pcall(function()
-          claude_code.setup({
+    vim.luaConfigRC.claude-code = nvim.dag.entryAnywhere ''
+      require("claude-code").setup({
         window = {
           split_ratio = 0.3,      -- Percentage of screen for the terminal window (height for horizontal, width for vertical splits)
           position = "botright",  -- Position of the window: "botright", "topleft", "vertical", "float", etc.
@@ -68,21 +60,7 @@ in {
           window_navigation = true, -- Enable window navigation keymaps (<C-h/j/k/l>)
           scrolling = true,         -- Enable scrolling keymaps (<C-f/b>) for page up/down
         }
-          })
-        end)
-
-        if not setup_ok then
-          vim.notify("Failed to setup claude-code: " .. tostring(setup_err), vim.log.levels.ERROR)
-          return false
-        end
-
-        return true
-      end
-
-      -- Only setup if successful
-      if not safe_setup_claude_code() then
-        vim.notify("Claude Code plugin disabled due to errors", vim.log.levels.WARN)
-      end
+      })
     '';
   };
 }
