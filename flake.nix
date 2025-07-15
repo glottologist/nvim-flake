@@ -86,11 +86,6 @@
       flake = false;
     };
 
-    lsp-format = {
-      url = "github:lukas-reineke/lsp-format.nvim";
-      flake = false;
-    };
-
     lspsaga = {
       url = "github:tami5/lspsaga.nvim";
       flake = false;
@@ -181,15 +176,6 @@
       flake = false;
     };
 
-    # Copying/Registers
-    registers = {
-      url = "github:tversteeg/registers.nvim";
-      flake = false;
-    };
-    nvim-neoclip = {
-      url = "github:AckslD/nvim-neoclip.lua";
-      flake = false;
-    };
 
     # Telescope
     telescope = {
@@ -202,7 +188,7 @@
     nil = {
       url = "github:oxalica/nil";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "flake-utils";
+      inputs.flake-utils.follows = "nixpkgs";
     };
 
     # Filetrees
@@ -224,10 +210,8 @@
     };
 
     ## Autocompletes
-    nvim-compe = {
-      url = "github:hrsh7th/nvim-compe";
-      flake = false;
-    };
+ 
+ 
     nvim-cmp = {
       url = "github:hrsh7th/nvim-cmp";
       flake = false;
@@ -269,11 +253,6 @@
       flake = false;
     };
 
-    # Commenting
-    kommentary = {
-      url = "github:b3nj5m1n/kommentary";
-      flake = false;
-    };
     comment-nvim = {
       url = "github:numToStr/Comment.nvim";
       flake = false;
@@ -290,21 +269,6 @@
       flake = false;
     };
 
-    # Dashboard Utilities
-    dashboard-nvim = {
-      url = "github:glepnir/dashboard-nvim";
-      flake = false;
-    };
-
-    alpha-nvim = {
-      url = "github:goolord/alpha-nvim";
-      flake = false;
-    };
-
-    vim-startify = {
-      url = "github:mhinz/vim-startify";
-      flake = false;
-    };
 
     # Themes
     tokyonight = {
@@ -419,17 +383,8 @@
       flake = false;
     };
 
-    keylog-nvim = {
-      url = "github:glottologist/keylog.nvim/0b643a75e5edd446b6fc45543b0315abac8cb483";
-      flake = false;
-    };
     cheatsheet-nvim = {
       url = "github:sudormrfbin/cheatsheet.nvim";
-      flake = false;
-    };
-
-    gesture-nvim = {
-      url = "github:notomo/gesture.nvim";
       flake = false;
     };
 
@@ -440,11 +395,6 @@
 
     leap-nvim = {
       url = "github:ggandor/leap.nvim";
-      flake = false;
-    };
-
-    smartcolumn = {
-      url = "github:m4xshen/smartcolumn.nvim";
       flake = false;
     };
 
@@ -468,12 +418,6 @@
 
     modes-nvim = {
       url = "github:mvllow/modes.nvim";
-      flake = false;
-    };
-
-    # Assistant
-    copilot-lua = {
-      url = "github:zbirenbaum/copilot.lua";
       flake = false;
     };
 
