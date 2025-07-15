@@ -49,7 +49,7 @@
 
   # Flake inputs
   inputs = {
-    nixpkgs.url = "github:glottologist/nixpkgs/release-24.11";
+    nixpkgs.url = "github:glottologist/nixpkgs/release-25.05";
     flake-parts.url = "github:hercules-ci/flake-parts";
     flake-utils.url = "github:numtide/flake-utils";
 
@@ -69,8 +69,6 @@
 
     # LSP plugins
     nvim-lspconfig = {
-      # url = "github:neovim/nvim-lspconfig?ref=v0.1.3";
-      # Use master for nil_ls
       url = "github:neovim/nvim-lspconfig";
       flake = false;
     };
