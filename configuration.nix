@@ -135,26 +135,26 @@ inputs: let
           view = {
             width = 25;
           };
-        };
+		};
       };
 
       vim.tabline = {
-        nvimBufferline.enable = true;
+        nvimBufferline.enable = false;
       };
 
       vim.treesitter = {
         enable = true;
-        fold = true;
+        fold = false;
       };
 
-      vim.treesitter.context.enable = true;
+      vim.treesitter.context.enable = false;
 
       vim.binds = {
-        whichKey.enable = true;
-        cheatsheet.enable = true;
+        whichKey.enable = false;
+        cheatsheet.enable = false;
       };
 
-      vim.telescope.enable = true;
+      vim.telescope.enable = false;
 
       vim.git = {
         enable = true;
@@ -187,7 +187,7 @@ inputs: let
 
       vim.notes = {
         obsidian = {
-          enable = true;
+          enable = false;
           dir = "~/development/glottologist/me";
         };
         todo-comments.enable = true;
