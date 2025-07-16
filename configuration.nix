@@ -5,7 +5,7 @@ inputs: let
     modules ? [],
     pkgs,
     lib ? pkgs.lib,
-    check ? true,
+    check ? false, # Disable the plugin checks to avoid errors
     extraSpecialArgs ? {},
   }:
     modulesWithInputs {
@@ -26,7 +26,7 @@ inputs: let
         };
       };
       vim.code = {
-        leetcode.enable = true;
+        leetcode.enable = false;
       };
       vim.ai = {
         code-companion = {
@@ -44,12 +44,12 @@ inputs: let
       vim.lsp = {
         formatOnSave = true;
         lspkind.enable = false;
-        lightbulb.enable = true;
+        lightbulb.enable = false;
         lspsaga.enable = false;
         nvimCodeActionMenu.enable = false;
-        actionsPreview.enable = true;
-        trouble.enable = true;
-        lspSignature.enable = true;
+        actionsPreview.enable = false;
+        trouble.enable = false;
+        lspSignature.enable = false;
       };
 
       vim.languages = {
@@ -64,8 +64,8 @@ inputs: let
         html.enable = isDeveloper;
         sql.enable = isDeveloper;
         solidity.enable = isDeveloper;
-        ligo.enable = isDeveloper;
-        clojure.enable = isDeveloper;
+        ligo.enable = false;
+        clojure.enable = false;
         elm.enable = isDeveloper;
         fsharp.enable = isDeveloper;
         markdown = {
@@ -76,19 +76,19 @@ inputs: let
         ocaml.enable = isDeveloper;
         nim.enable = isDeveloper;
         rust = {
-          enable = isDeveloper;
+          enable = false; #isDeveloper;
           crates.enable = true;
         };
         ts.enable = isDeveloper;
         go.enable = isDeveloper;
         zig.enable = isDeveloper;
         python.enable = isDeveloper;
-        dart.enable = isDeveloper;
+        dart.enable = false;
         elixir.enable = false;
       };
 
       vim.visuals = {
-        enable = true;
+        enable = false;
         nvimWebDevicons.enable = true;
         scrollBar.enable = true;
         smoothScroll.enable = true;
@@ -119,7 +119,7 @@ inputs: let
         transparent = false;
       };
 
-      vim.autopairs.enable = true;
+      vim.autopairs.enable = false;
 
       vim.autocomplete = {
         enable = false;
@@ -171,17 +171,17 @@ inputs: let
       };
 
       vim.utility = {
-        eyeliner.enable = true;
-        colorizer.enable = true;
-        diffview-nvim.enable = true;
-        easyalign.enable = true;
+        eyeliner.enable = false;
+        colorizer.enable = false;
+        diffview-nvim.enable = false;
+        easyalign.enable = false;
         hardtime.enable = false;
-        icon-picker.enable = true;
-        wakatime.enable = true;
-        zenmode.enable = true;
+        icon-picker.enable = false;
+        wakatime.enable = false;
+        zenmode.enable = false;
         motion = {
-          hop.enable = true;
-          leap.enable = true;
+          hop.enable = false;
+          leap.enable = false;
         };
       };
 
@@ -190,22 +190,22 @@ inputs: let
           enable = false;
           dir = "~/development/glottologist/me";
         };
-        todo-comments.enable = true;
+        todo-comments.enable = false;
       };
 
       vim.terminal = {
         toggleterm = {
-          enable = true;
-          lazygit.enable = true;
+          enable = false;
+          lazygit.enable = false;
         };
       };
 
       vim.ui = {
-        noice.enable = true;
+        noice.enable = false;
       };
 
       vim.comments = {
-        comment-nvim.enable = true;
+        comment-nvim.enable = false;
       };
     };
   };

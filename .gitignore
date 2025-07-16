@@ -12,3 +12,5 @@ result/
 *.log.*
 
 # 
+
+**/.claude/settings.local.json

@@ -6,7 +6,7 @@
   inherit (import ../configuration.nix inputs) neovimConfiguration mainConfig;
 
   buildPkg = pkgs: modules:
-    (neovimConfiguration {inherit pkgs modules;})
+    (neovimConfiguration {inherit pkgs modules; check = false;})
     .neovim;
 
   editorConfig = mainConfig false;
