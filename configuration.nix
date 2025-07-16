@@ -158,8 +158,8 @@ inputs: let
 
       vim.git = {
         enable = true;
-        gitworktrees.enable = true;
-        gitsigns.enable = true;
+        gitworktrees.enable = false;
+        gitsigns.enable = false;
         gitsigns.codeActions = false; # throws an annoying debug message
       };
 

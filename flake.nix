@@ -188,7 +188,6 @@
     nil = {
       url = "github:oxalica/nil";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-utils.follows = "nixpkgs";
     };
 
     # Filetrees
