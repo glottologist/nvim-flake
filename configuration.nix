@@ -44,12 +44,12 @@ inputs: let
       vim.lsp = {
         formatOnSave = true;
         lspkind.enable = false;
-        lightbulb.enable = false;
+        lightbulb.enable = true;
         lspsaga.enable = false;
         nvimCodeActionMenu.enable = false;
-        actionsPreview.enable = false;
-        trouble.enable = false;
-        lspSignature.enable = false;
+        actionsPreview.enable = true;
+        trouble.enable = true;
+        lspSignature.enable = true;
       };
 
       vim.languages = {
@@ -76,7 +76,7 @@ inputs: let
         ocaml.enable = isDeveloper;
         nim.enable = isDeveloper;
         rust = {
-          enable = false; #isDeveloper;
+          enable = isDeveloper;
           crates.enable = true;
         };
         ts.enable = isDeveloper;
@@ -88,7 +88,7 @@ inputs: let
       };
 
       vim.visuals = {
-        enable = false;
+        enable = true;
         nvimWebDevicons.enable = true;
         scrollBar.enable = true;
         smoothScroll.enable = true;
@@ -122,7 +122,7 @@ inputs: let
       vim.autopairs.enable = false;
 
       vim.autocomplete = {
-        enable = false;
+        enable = true;
         type = "nvim-cmp";
       };
 
@@ -135,31 +135,31 @@ inputs: let
           view = {
             width = 25;
           };
-		};
+        };
       };
 
       vim.tabline = {
-        nvimBufferline.enable = false;
+        nvimBufferline.enable = true;
       };
 
       vim.treesitter = {
         enable = true;
-        fold = false;
+        fold = true;
       };
 
-      vim.treesitter.context.enable = false;
+      vim.treesitter.context.enable = true;
 
       vim.binds = {
-        whichKey.enable = false;
-        cheatsheet.enable = false;
+        whichKey.enable = true;
+        cheatsheet.enable = true;
       };
 
-      vim.telescope.enable = false;
+      vim.telescope.enable = true;
 
       vim.git = {
         enable = true;
-        gitworktrees.enable = false;
-        gitsigns.enable = false;
+        gitworktrees.enable = true;
+        gitsigns.enable = true;
         gitsigns.codeActions = false; # throws an annoying debug message
       };
 
@@ -171,17 +171,17 @@ inputs: let
       };
 
       vim.utility = {
-        eyeliner.enable = false;
-        colorizer.enable = false;
-        diffview-nvim.enable = false;
-        easyalign.enable = false;
+        eyeliner.enable = true;
+        colorizer.enable = true;
+        diffview-nvim.enable = true;
+        easyalign.enable = true;
         hardtime.enable = false;
-        icon-picker.enable = false;
-        wakatime.enable = false;
-        zenmode.enable = false;
+        icon-picker.enable = true;
+        wakatime.enable = true;
+        zenmode.enable = true;
         motion = {
-          hop.enable = false;
-          leap.enable = false;
+          hop.enable = true;
+          leap.enable = true;
         };
       };
 
@@ -201,11 +201,11 @@ inputs: let
       };
 
       vim.ui = {
-        noice.enable = false;
+        noice.enable = true;
       };
 
       vim.comments = {
-        comment-nvim.enable = false;
+        comment-nvim.enable = true;
       };
     };
   };
